@@ -1,0 +1,7 @@
+<h2>Liste des salles</h2>
+<ul>
+  <li *ngFor="let salle of listeSalles">
+    {{ salle.nom }}
+    <a routerLink="/salles/{{ salle.id }}">Détails</a>
+  </li>
+</ul>
